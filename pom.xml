@@ -41,7 +41,7 @@
 					<version>2.5</version>
 					<configuration>
 					<!--clean verify-->
-						<preparationGoals>tycho-versions:set-version</preparationGoals>
+						<preparationGoals>clean verify tycho-versions:set-version</preparationGoals>
 						<completionGoals>tycho-versions:set-version</completionGoals>
 						<!--goals>tycho-versions:set-version</goals   ${releaseVersion}-developmentVersion -->
 						<arguments>-X -Dtycho.mode=maven -DnewVersion=${releaseVersion} -D maven.deploy.skip=true</arguments>
