@@ -13,7 +13,7 @@
 
   <groupId>org.overturetool.astcreator</groupId>
   <artifactId>root</artifactId>
-  <version>1.6.7-SNAPSHOT</version>
+  <version>1.6.8</version>
 
   <name>Overture AstCreator superpom</name>
   <description>This is the Overture AstCreator project.  AstCreator allows the automatic creation of heterogeneous ASTs in Java based on an input specification.  Created along with the AST classes are visitors that allow for functionality to be implemented over the AST.
@@ -43,7 +43,7 @@
 					<!--clean verify-->
 						<preparationGoals>tycho-versions:set-version</preparationGoals>
 						<completionGoals>tycho-versions:set-version</completionGoals>
-						<!--goals>tycho-versions:set-version</goals   ${releaseVersion}-developmentVersion -->
+						<!--goals>tycho-versions:set-version</goals ${releaseVersion}-developmentVersion -->
 						<arguments>-X -Dtycho.mode=maven -DnewVersion=${releaseVersion} -D maven.deploy.skip=true</arguments>
 
 
@@ -216,7 +216,7 @@
     <url>git@github.com/lausdahl/astcreator.git</url>
     <connection>scm:git:https://github.com/lausdahl/astcreator.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/lausdahl/astcreator.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v1.6.8-v2</tag>
   </scm>
 
   <developers>

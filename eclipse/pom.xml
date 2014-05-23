@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.overturetool.astcreator</groupId>
     <artifactId>root</artifactId>
-    <version>1.6.7-SNAPSHOT</version>
+    <version>1.6.8</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -113,7 +113,7 @@
 					<!--clean verify-->
 						<preparationGoals>tycho-versions:set-version</preparationGoals>
 						<completionGoals>tycho-versions:set-version</completionGoals>
-						<!--goals>tycho-versions:set-version</goals   ${releaseVersion}-developmentVersion -->
+						<!--goals>tycho-versions:set-version</goals ${releaseVersion}-developmentVersion -->
 						<arguments>-X -Dtycho.mode=maven -DnewVersion=${releaseVersion} -D maven.deploy.skip=true</arguments>
 
 
