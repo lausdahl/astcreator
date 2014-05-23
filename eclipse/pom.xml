@@ -19,6 +19,7 @@
 		<maven.test.skip>true</maven.test.skip>
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 		<tycho.version>0.19.0</tycho.version>
+		
 	</properties>
 
 	<modules>
@@ -102,20 +103,7 @@
 
 		
 
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5</version>
-					<configuration>
-					<!--clean verify-->
-						
-						<completionGoals>tycho-versions:set-version</completionGoals>
-						<!--goals>tycho-versions:set-version</goals   ${releaseVersion}-->
-						<arguments>-X -Dtycho.mode=maven -DnewVersion=${developmentVersion}</arguments>
-
-
-					</configuration>
-				</plugin>
+			
 				
 						<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -124,9 +112,9 @@
 					<configuration>
 					<!--clean verify-->
 						<preparationGoals>tycho-versions:set-version</preparationGoals>
-						
-						<!--goals>tycho-versions:set-version</goals   ${releaseVersion}-->
-						<arguments>-X -Dtycho.mode=maven -DnewVersion=${releaseVersion}</arguments>
+						<completionGoals>tycho-versions:set-version</completionGoals>
+						<!--goals>tycho-versions:set-version</goals   ${releaseVersion}-developmentVersion -->
+						<arguments>-X -Dtycho.mode=maven -DnewVersion=${releaseVersion} -D maven.deploy.skip=true</arguments>
 
 
 					</configuration>
