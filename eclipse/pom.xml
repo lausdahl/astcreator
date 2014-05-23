@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.overturetool.astcreator</groupId>
     <artifactId>root</artifactId>
-    <version>1.6.5-SNAPSHOT</version>
+    <version>1.6.7-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -139,10 +139,10 @@
 	</build>
 
 	
-	  <scm>
+	  <!--scm>
     <url>git@github.com:lausdahl/astcreator.git</url>
     <connection>scm:git:https://github.com/lausdahl/astcreator.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/lausdahl/astcreator.git</developerConnection>
     <tag>HEAD</tag>
-  </scm>
+  </scm-->
 </project>
