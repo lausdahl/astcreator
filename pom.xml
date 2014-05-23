@@ -28,6 +28,13 @@
     <defaultGoal>install</defaultGoal>
 
     <plugins>
+	
+	<!--plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<extensions>true</extensions>
+			</plugin-->
+	
       <plugin>
         <!--
             This plugin allows you to run
@@ -65,6 +72,21 @@
 
     <pluginManagement>
       <plugins>
+	  
+				<!--plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-maven-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				
+				<plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-versions-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+				</plugins-->
+	  
+	  
 	<!-- Configure the compiler for all Overture Projects -->
 	<plugin>
 	  <groupId>org.apache.maven.plugins</groupId>
@@ -175,9 +197,9 @@
   </licenses>
 
   <scm>
-    <url>git@github.com/overturetool/astcreator.git</url>
-    <connection>scm:git:https://github.com/overturetool/astcreator.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/overturetool/astcreator.git</developerConnection>
+    <url>git@github.com/lausdahl/astcreator.git</url>
+    <connection>scm:git:https://github.com/lausdahl/astcreator.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/lausdahl/astcreator.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
