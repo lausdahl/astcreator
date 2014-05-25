@@ -60,6 +60,7 @@
 					<!-- optional -->
 					<workingDirectory>eclipse</workingDirectory>
 					<arguments>
+					<argument>-X</argument>
 						<argument>-Dtycho.mode=maven</argument>
 						<argument>tycho-versions:set-version</argument>
 						<argument>-DnewVersion=${newVersion}</argument>
@@ -233,7 +234,7 @@
 		<url>git@github.com/lausdahl/astcreator.git</url>
 		<connection>scm:git:https://github.com/lausdahl/astcreator.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/lausdahl/astcreator.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v1.6.8-aak</tag>
 	</scm>
 
 	<developers>
