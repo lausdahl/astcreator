@@ -58,11 +58,11 @@
 				<configuration>
 					<executable>mvn</executable>
 					<!-- optional -->
-					<workingDirectory>eclipse</workingDirectory>
+					<!--workingDirectory>eclipse</workingDirectory-->
 					<arguments>
 						<argument>-N</argument>
-						<argument>tycho-versions:set-version</argument>
-						<argument>-DnewVersion=${newVersion}</argument>
+						<argument>validate </argument>
+						
 					</arguments>
 				</configuration>
 			</plugin>
