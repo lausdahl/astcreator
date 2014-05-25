@@ -44,30 +44,7 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<inherited>false</inherited>
-				<version>1.3</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<executable>mvn</executable>
-					<!-- optional -->
-					<workingDirectory>eclipse</workingDirectory>
-					<arguments>
-					<argument>-X</argument>
-						<argument>-Dtycho.mode=maven</argument>
-						<argument>tycho-versions:set-version</argument>
-						<argument>-DnewVersion=${newVersion}</argument>
-					</arguments>
-				</configuration>
-			</plugin>
+		
 
 			<plugin>
 				<!--
