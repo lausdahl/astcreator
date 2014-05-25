@@ -134,7 +134,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
-					<preparationGoals>clean verify exec:exec</preparationGoals>
+					<preparationGoals>exec:exec</preparationGoals>
 					<arguments>-DnewVersion=${releaseVersion} -D maven.deploy.skip=true</arguments>
 				</configuration>
 			</plugin>
@@ -156,14 +156,14 @@
 					<target>
 						<echo message="jkjk">Hello World</echo>
 						<!--artifact:mvn pom="pom.xml">
-							<arg value="install"/>
+							<arg value="install" />
 						</artifact:mvn-->
 					</target>
 
 
 
 					<!--propertyfile file="my.properties">
-			<entry  key="abc" value="${newVersion}"/>
+			<entry key="abc" value="${newVersion}" />
 		</propertyfile-->
 
 					<!--exec
@@ -231,4 +231,8 @@
     <developerConnection>scm:git:ssh://git@github.com/lausdahl/astcreator.git</developerConnection>
     <tag>HEAD</tag>
   </scm-->
+
+  <scm>
+    <tag>v1.6.8-----hh</tag>
+  </scm>
 </project>
