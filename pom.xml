@@ -47,6 +47,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
+				<inherited>false</inherited>
 				<version>1.3</version>
 				<executions>
 					<execution>
@@ -234,7 +235,7 @@
 		<url>git@github.com/lausdahl/astcreator.git</url>
 		<connection>scm:git:https://github.com/lausdahl/astcreator.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/lausdahl/astcreator.git</developerConnection>
-		<tag>v1.6.8-aak</tag>
+		<tag>v1.6.8</tag>
 	</scm>
 
 	<developers>
