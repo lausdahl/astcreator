@@ -13,7 +13,7 @@
 
 	<groupId>org.overturetool.astcreator</groupId>
 	<artifactId>root</artifactId>
-	<version>1.6.8</version>
+	<version>1.6.9-SNAPSHOT</version>
 
 	<name>Overture AstCreator superpom</name>
 	<description>This is the Overture AstCreator project.  AstCreator allows the automatic creation of heterogeneous ASTs in Java based on an input specification.  Created along with the AST classes are visitors that allow for functionality to be implemented over the AST.
