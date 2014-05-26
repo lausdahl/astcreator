@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apaclsche.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -194,13 +194,12 @@
 					</execution>
 				</executions>
 				<configuration>
-					<executable>mvn</executable>
+					<executable>set-version.bat</executable>
 					<!-- optional -->
 					<!--workingDirectory>/tmp</workingDirectory-->
 					<arguments>
-						<argument>-X</argument>
-						<argument>tycho-versions:set-version</argument>
-						<argument>-DnewVersion=${newVersion}</argument>
+						<argument>${project.version}</argument>
+						<argument>${newVersion}</argument>
 					</arguments>
 				</configuration>
 			</plugin>
@@ -232,7 +231,6 @@
     <tag>HEAD</tag>
   </scm-->
 
-	<scm>
-		<tag>v1.6.8--l</tag>
-	</scm>
+
+
 </project>

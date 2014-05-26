@@ -56,13 +56,11 @@
 					</execution>
 				</executions>
 				<configuration>
-					<executable>mvn</executable>
-					<!-- optional -->
-					<!--workingDirectory>eclipse</workingDirectory-->
+					<executable>cmd.exe</executable>
+					
 					<arguments>
-						<argument>-N</argument>
-						<argument>validate </argument>
-						
+						<argument>/C</argument>
+						<argument>echo hello</argument>
 					</arguments>
 				</configuration>
 			</plugin>
