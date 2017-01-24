@@ -22,7 +22,7 @@ withMaven(mavenLocalRepo: '.repository', mavenSettingsFilePath: '/var/lib/jenkin
 
 
 stage 'Package'
-withMaven(mavenLocalRepo: '.repository', mavenSettingsFilePath: '/var/lib/jenkins/internal-resources/settings.xml'$
+withMaven(mavenLocalRepo: '.repository', mavenSettingsFilePath: '/var/lib/jenkins/internal-resources/settings.xml') {
 
         // Run the maven build
         sh "mvn package"
