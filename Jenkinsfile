@@ -26,9 +26,11 @@ withMaven(mavenLocalRepo: '.repository', mavenSettingsFilePath: '/var/lib/jenkin
 
         // Run the maven build
         sh "mvn package"
+//step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar', fingerprint: true])
+  step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
     }
 
 stage 'Publish test results'
-junit '**/target/surefire-reports/*.xml'
+//junit '**/target/surefire-reports/*.xml'
 
 }
